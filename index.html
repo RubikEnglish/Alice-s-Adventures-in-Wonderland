@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <title>Alice's Adventures in wonderland</title>
+</head>
+<body>
+<div class="container">
+  <h1 class="text-center">Alice's Adventures in wonderland</h1>
+  <h1 class="text-center">Las aventuras de Alicia en tierramaravilla</h1>
+  <div class="float-right">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+  <div class="text-center">
+    <img id='hangmanPic' src="./images/0.jpg" alt="">
+    <br/>
+    <br/>
+    <p>La frase "Alice was beginning to get very tired" </p>
+    <p>esta compuesta en español por las palabras equivalentes siguientes:</p>
+    <p>| a | Alicia | cansada | comenzando | estaba | estar | muy |</p>
+    <p>Teclea las palabras en español en un orden lógico para traducir la frase al español</p>
+     <p>Alice | was | beginning | to | get | very | tired </p>
+    <p id="wordSpotlight">The word to be guessed goes here</p>
+    <div id="keyboard"></div>
+    <button class="btn btn-info" onClick="reset()">Siguiente</button>
+  </div> 
+</div>
+
+<script src='./js/hangman.js'></script>
+</body>
+</html>
